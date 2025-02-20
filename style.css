@@ -98,7 +98,7 @@ video {
 }
 
 .wrapper {
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -199,6 +199,9 @@ footer {
 
 @media screen and (45em <= width) {
 
+    .wrapper {
+        align-items: center;
+    }
     img {
         
         height: 100%;
@@ -207,14 +210,5 @@ footer {
     .product-card {
         grid-template-columns: 1fr 1fr;
         width: 600px;
-    }
-}
-@media screen and (75em <= width) {
-
-   
-    .product-card {
-       
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
     }
 }
